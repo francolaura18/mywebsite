@@ -1,0 +1,129 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sierra Pixel — Diseño · Código · Datos</title>
+  <meta name="description" content="Diseño gráfico, desarrollo front‑end y análisis de datos." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <a href="#inicio" class="brand logo">
+       <img src="img/logo_sierrapixel.svg" alt="logo">
+      </a>
+      <nav class="menu" aria-label="Secciones del sitio">
+        <a href="#inicio" aria-current="page">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="https://www.behance.net/gallery/178571627/Portafolio-de-diseno-grafico" target="_blank" rel="noopener noreferrer">Proyectos</a>
+      </nav>
+      <a class="cta-header" href="formulario.html">Construyamos tu web</a>
+      <button class="hamb" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="container inner">
+      <div class="eyebrow">Diseño · Código · Datos</div>
+      <h1>Transformo ideas en experiencias digitales con impacto.</h1>
+      <p class="lead">Diseñadora gráfica, desarrolladora front‑end y analista de datos con experiencia en convertir lo complejo en interfaces claras, modernas y eficientes.</p>
+      <div class="cta">
+        <a class="btn primary" href="#servicios">¿Qué sé hacer?</a>
+        <a class="btn ghost" href="https://www.behance.net/gallery/178571627/Portafolio-de-diseno-grafico" target="_blank" rel="noopener noreferrer">Ver portafolio</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="servicios" class="skills">
+    <div class="container">
+      <div class="section-head" style="align-items:center">
+        <h2 class="title">Mis habilidades profesionales</h2>
+        <p>Combino creatividad técnica y análisis estratégico para soluciones de alto impacto.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img class="icon" src="img/Code.svg" alt="icon"/>
+           <h3>Desarrollo front‑end</h3>
+          <p>Interfaces modernas y responsivas con código limpio y accesible.</p>
+           </article>
+        <article class="card">
+        <img class="icon" src="img/PenNibStraight.svg" alt="icon"/>
+          <h3>Diseño gráfico</h3>
+          <p>Identidades visuales que comunican la esencia de cada marca.</p>
+        </article>
+        <article class="card">
+          <img class="icon" src="img/Database.svg" alt="icon"/>
+          <h3>Análisis de datos</h3>
+          <p>Datos complejos transformados en visualizaciones claras y útiles.</p>
+        </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="porque">
+    <div class="container">
+      <div class="section-head" style="align-items:center">
+        <h2 class="title">¿Por qué contratarme?</h2>
+        <p><strong>¿Y por qué no hacerlo?</strong> Conmigo encuentras…</p>
+      </div>
+      <div class="grid">
+        <div class="points">
+          <div class="point">
+            <div class="bullet"><img src="img/NavigationArrow.svg" alt=""></div>
+            <div>
+              <h4>Precisión técnica</h4>
+              <p>Soluciones que combinan estética moderna con funcionalidad práctica y eficiente.</p>
+            </div>
+          </div>
+          <div class="point">
+            <div class="bullet"><img src="img/Clock.svg" alt=""></div>
+            <div>
+              <h4>Entrega oportuna</h4>
+              <p>Compromiso con plazos precisos y calidad de alto nivel en cada proyecto.</p>
+            </div>
+          </div>
+          <div class="point">
+            <div class="bullet"><img src="img/SmileyWink.svg" alt=""></div>
+            <div>
+              <h4>Innovación constante</h4>
+              <p>Actualización continua para ofrecer siempre las mejores soluciones del mercado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="img/perfil.jpg" alt="Foto de perfil" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="testi">
+    <div class="container wrap">
+      <div class="section-head" style="align-items:center">
+        <h2 class="title">Testimonios</h2>
+        <p>Lo que dicen quienes han trabajado conmigo.</p>
+      </div>
+      <div class="carousel">
+        <div class="slide" id="slide"></div>
+        <div class="nav-arrows">
+          <button class="arrow" id="prev" aria-label="Anterior">←</button>
+          <button class="arrow" id="next" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Sierra Pixel. Hecho con ♥.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto — Sierra Pixel</title>
+  <meta name="description" content="Ponte en contacto para cotizaciones, colaboraciones y soporte." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <a href="#inicio" class="brand logo">
+       <img src="img/logo_sierrapixel.svg" alt="logo">
+      </a>
+      <nav class="menu" aria-label="Secciones del sitio">
+        <a href="website_basico_index.html" aria-current="page">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="https://www.behance.net/gallery/178571627/Portafolio-de-diseno-grafico" target="_blank" rel="noopener noreferrer">Proyectos</a>
+      </nav>
+      <a class="cta-header" href="formulario.html">Construyamos tu web</a>
+      <button class="hamb" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+
+  <main id="inicio" class="hero">
+    <div class="container inner">
+      <div class="eyebrow">Diseño · Código · Datos</div>
+      <h1>Hablemos de tu proyecto</h1>
+      <p class="lead">Cuéntame tus ideas y juntos diseñaremos una solución digital con impacto.</p>
+    
+    </div>
+  </main>
+
+  <main>
+    <div class="container contact-wrap">
+      <section class="contact-card">
+        <h2 style="color: #8B0000;">Envíame un mensaje</h2>
+        <p>Completa el formulario y te responderé pronto.</p>
+        <form id="contacto" class="contact" method="POST" action="">
+          <div class="row">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="tucorreo@ejemplo.com" />
+            </div>
+          </div>
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar</button>
+          <div id="form-ok" class="success">¡Gracias! Tu mensaje fue enviado.</div>
+          <div id="form-error" class="error">Ocurrió un error. Intenta nuevamente.</div>
+        </form>
+        <aside class="contact-card_">
+        <h2>Otras formas de contacto</h2>
+        <div class="icon_form">
+        <div class="icon_form_child">
+        <img src="img/mail.png" alt=""><a href="mailto:tuemail@ejemplo.com"></a>
+        </div>
+        <div class="icon_form_child">
+        <img src="img/whatsapp.png" alt=""><a href="https://wa.me/573022402530" target="_blank"></a>
+        </div>
+        <div class="icon_form_child">
+        <img src="img/linkedin.png" alt=""><a href="https://www.linkedin.com/in/laura-franco-sierra-b1675920a/" target="_blank"></a>
+        </div>
+        </div>
+    </aside>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Sierra Pixel. Hecho con ♥.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form=document.getElementById('contacto');
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      document.getElementById('form-ok').style.display='block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
